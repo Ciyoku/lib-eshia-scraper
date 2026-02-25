@@ -3,7 +3,7 @@
 ## طريقة الاستخدام
 
 ```bash
-python extract_eshia_book.py [خيارات] <رابط_الصفحة_الأولى>
+python main.py [خيارات] <رابط_الصفحة_الأولى>
 ```
 
 ### معاملات التشغيل
@@ -21,37 +21,37 @@ python extract_eshia_book.py [خيارات] <رابط_الصفحة_الأولى>
 استخراج الكتاب من الصفحة الأولى وحفظه:
 
 ```bash
-python extract_eshia_book.py https://lib.eshia.ir/15050/1/0
+python main.py https://lib.eshia.ir/15050/1/0
 ```
 
 تحديد ملف إخراج:
 
 ```bash
-python extract_eshia_book.py -o result.txt https://lib.eshia.ir/15050/1/0
+python main.py -o result.txt https://lib.eshia.ir/15050/1/0
 ```
 
 إيقاف العملية بعد 100 صفحة:
 
 ```bash
-python extract_eshia_book.py --max-pages 100 https://lib.eshia.ir/15050/1/0
+python main.py --max-pages 100 https://lib.eshia.ir/15050/1/0
 ```
 
 وضع تأخير ثانية واحدة بين كل طلب:
 
 ```bash
-python extract_eshia_book.py --delay 1 https://lib.eshia.ir/15050/1/0
+python main.py --delay 1 https://lib.eshia.ir/15050/1/0
 ```
 
 تحديد مهلة 10 ثوانٍ لكل اتصال وإعادة المحاولة مرتين عند الفشل:
 
 ```bash
-python extract_eshia_book.py --timeout 10 --retries 2 https://lib.eshia.ir/15050/1/0
+python main.py --timeout 10 --retries 2 https://lib.eshia.ir/15050/1/0
 ```
 
 تعطيل عرض تقدم العملية:
 
 ```bash
-python extract_eshia_book.py --quiet https://lib.eshia.ir/15050/1/0
+python main.py --quiet https://lib.eshia.ir/15050/1/0
 ```
 ## المساهمة
 يهدف هذا المشروع إلى خدمة المجتمع الشيعي. يمكن المساهمة بعدة طرق:
